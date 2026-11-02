@@ -30,6 +30,10 @@ maincont = find(main_win, "PEMainContainerModule")
 upper = find(main_win, "PEUpperDeckContainer")
 lower = find(main_win, "PELowerDeckContainer")
 viewer = find(upper, "PEMainDisplayArea")
+for name, m in [("PEMainContainerModule", maincont), ("PEUpperDeckContainer", upper),
+                ("PELowerDeckContainer", lower), ("PEMainDisplayArea", viewer)]:
+    if m is None:
+        raise SystemExit(f"{name} not found in Apple's Default workspace. This Final Cut version is not supported yet.")
 
 # Default layout, but the viewer leaves the top row and becomes a full-height
 # column on the right. It must stay inside PEMainContainerModule: Final Cut

@@ -19,7 +19,7 @@ Tested on Final Cut Pro 12.4, macOS 26. Works best on wide and ultrawide monitor
 ## Install
 
 1. Download the latest zip from [Releases](../../releases) and unzip it.
-2. Right-click `Install.command` and choose **Open**. (macOS may block a plain double-click on files downloaded from the internet.)
+2. Double-click `Install.command`. The installer is not signed, so macOS 15 and later will block it the first time. Open **System Settings > Privacy & Security**, scroll down, click **Open Anyway** next to Install.command, and confirm. If you would rather not, use the manual install below.
 3. Quit Final Cut Pro and open it again.
 4. Choose **Window > Workspaces > Vertical**.
 
